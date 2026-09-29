@@ -25,6 +25,7 @@
       <a href="#compliance">法律合规 <em>Compliance</em></a>
       <a href="#careers">招聘求职 <em>Careers</em></a>
       <a href="#finance">金融与机构 <em>Finance</em></a>
+      <a href="#tools">工具箱 <em>Tools</em></a>
       <a href="#resources">资源库 <em>Resources</em></a>
       <a href="#glossary">术语表 <em>Glossary</em></a>
       <a href="#about">关于 <em>About</em></a>
@@ -48,7 +49,8 @@
       </p>
       <div class="hero-actions">
         <a class="btn primary" href="#writing">从报告撰写开始 →</a>
-        <a class="btn ghost" href="#overview">先看全局框架</a>
+        <a class="btn ghost" href="#tools">直接用工具箱</a>
+        <button class="btn ghost" id="copyLink" type="button">复制分享链接</button>
       </div>
       <dl class="hero-stats">
         <div><dt>4</dt><dd>核心板块<br><em>Core tracks</em></dd></div>
@@ -477,11 +479,101 @@
     </div>
   </section>
 
-  <!-- ============ RESOURCES ============ -->
-  <section id="resources" class="section alt">
+  <!-- ============ TOOLS ============ -->
+  <section id="tools" class="section alt">
     <div class="wrap">
       <div class="sec-head">
-        <p class="kicker">06 / Resources</p>
+        <p class="kicker">06 / Tools</p>
+        <h2>工具箱 · Click &amp; Use</h2>
+        <p class="sec-lede">
+          不用注册、不用装软件，打开就能用的三件东西：<strong>碳排快算</strong>、<strong>报告自查清单</strong>、<strong>常用入口直达</strong>。
+        </p>
+      </div>
+
+      <div class="tool-grid">
+
+        <!-- 计算器 -->
+        <div class="tool">
+          <div class="tool-head">
+            <span class="tool-tag">计算器</span>
+            <h3>Scope 1 / 2 碳排放快算</h3>
+          </div>
+          <p class="tool-note">填入年度用量即可粗算。正式盘查请按 GHG Protocol 使用最新本地排放因子。</p>
+
+          <div class="calc-grid">
+            <label>外购电力 <em>kWh</em><input type="number" id="in-elec" min="0" step="1" placeholder="0"></label>
+            <label>天然气 <em>m³</em><input type="number" id="in-gas" min="0" step="1" placeholder="0"></label>
+            <label>柴油 <em>L</em><input type="number" id="in-diesel" min="0" step="1" placeholder="0"></label>
+            <label>汽油 <em>L</em><input type="number" id="in-petrol" min="0" step="1" placeholder="0"></label>
+            <label>外购蒸汽 <em>GJ</em><input type="number" id="in-steam" min="0" step="1" placeholder="0"></label>
+            <label>自来水 <em>m³</em><input type="number" id="in-water" min="0" step="1" placeholder="0"></label>
+          </div>
+
+          <div class="tool-actions">
+            <button class="btn-mini" id="calcBtn">计算排放量</button>
+            <button class="btn-mini ghost" id="calcReset">清空</button>
+          </div>
+
+          <div class="calc-out" id="calcOut">
+            <p class="muted">填入数字后点「计算排放量」。</p>
+          </div>
+        </div>
+
+        <!-- 自查清单 -->
+        <div class="tool">
+          <div class="tool-head">
+            <span class="tool-tag">清单</span>
+            <h3>ESG 报告自查清单</h3>
+          </div>
+          <div class="progress"><div class="progress-bar" id="chkBar"></div></div>
+          <p class="tool-note">已完成 <b id="chkCount">0 / 10</b> · 可一键复制或打印带走</p>
+
+          <ul class="chklist" id="chkList">
+            <li><label><input type="checkbox"> 确定对标框架（GRI / ISSB / 交易所指引）</label></li>
+            <li><label><input type="checkbox"> 完成利益相关方访谈并留有记录</label></li>
+            <li><label><input type="checkbox"> 画出双重重要性议题矩阵</label></li>
+            <li><label><input type="checkbox"> Scope 1 / 2 数据完成第三方鉴证</label></li>
+            <li><label><input type="checkbox"> Scope 3 测算假设已形成书面文档</label></li>
+            <li><label><input type="checkbox"> 关键指标与上年口径一致，变更处已重述</label></li>
+            <li><label><input type="checkbox"> 减排目标具备基线年、路径、责任部门</label></li>
+            <li><label><input type="checkbox"> 对外宣传用语经法务 / 合规复核</label></li>
+            <li><label><input type="checkbox"> 供应商 ESG 条款写入采购合同并形成整改闭环</label></li>
+            <li><label><input type="checkbox"> 董事会已就报告履行审议程序（有会议纪要）</label></li>
+          </ul>
+
+          <div class="tool-actions">
+            <button class="btn-mini" id="chkCopy">复制清单</button>
+            <button class="btn-mini ghost" id="chkPrint">打印 / 存 PDF</button>
+          </div>
+        </div>
+
+        <!-- 直达 -->
+        <div class="tool wide">
+          <div class="tool-head">
+            <span class="tool-tag">直达</span>
+            <h3>常用入口一键跳转</h3>
+          </div>
+          <div class="jump-grid">
+            <a href="https://www.globalreporting.org/standards/" target="_blank" rel="noopener">GRI 标准库<em>globalreporting.org</em></a>
+            <a href="https://www.ifrs.org/issued-standards/ifrs-sustainability-standards-navigator/" target="_blank" rel="noopener">ISSB 准则导航<em>ifrs.org</em></a>
+            <a href="https://ghgprotocol.org/sites/default/files/standards_supporting/Chinese_GHG_Protocol_Corporate_Standard.pdf" target="_blank" rel="noopener">GHG Protocol 中文版<em>pdf</em></a>
+            <a href="https://www.cdp.net/en/companies/companies-scores" target="_blank" rel="noopener">CDP 问卷与评分<em>cdp.net</em></a>
+            <a href="https://www.sse.com.cn/disclosure/listedinfo/sustain/" target="_blank" rel="noopener">上交所可持续披露<em>sse.com.cn</em></a>
+            <a href="https://www.hkex.com.hk/Listing/Rules-and-Guidance/Environmental-Social-and-Governance?sc_lang=zh-HK" target="_blank" rel="noopener">港交所 ESG 指引<em>hkex.com.hk</em></a>
+            <a href="https://sciencebasedtargets.org/target-validation" target="_blank" rel="noopener">SBTi 目标验证<em>sciencebasedtargets.org</em></a>
+            <a href="https://www.icmagroup.org/sustainable-finance/the-principles-guidelines-and-handbooks/" target="_blank" rel="noopener">绿色债券原则<em>icmagroup.org</em></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESOURCES ============ -->
+  <section id="resources" class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">07 / Resources</p>
         <h2>资源库 · Resources</h2>
         <p class="sec-lede">标准原文、数据平台与常用工具。建议按「标准 / 数据 / 机构」三类收藏。</p>
       </div>
@@ -560,7 +652,7 @@
   <section id="glossary" class="section">
     <div class="wrap">
       <div class="sec-head">
-        <p class="kicker">07 / Glossary</p>
+        <p class="kicker">08 / Glossary</p>
         <h2>术语表 · Glossary</h2>
         <p class="sec-lede">中文 / 英文 / 一句话解释。支持直接搜索。</p>
       </div>
@@ -597,7 +689,7 @@
   <section id="about" class="section alt">
     <div class="wrap">
       <div class="sec-head">
-        <p class="kicker">08 / About</p>
+        <p class="kicker">09 / About</p>
         <h2>关于本站 · About</h2>
       </div>
       <div class="about-grid">
