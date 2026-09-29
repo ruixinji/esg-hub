@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ESG 知识导航站 · ESG Knowledge Hub</title>
+<meta name="description" content="个人 ESG 知识导航站：可持续报告撰写、法律合规、招聘求职、金融与机构、数据资源与术语表。">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">ESG</span>
+      <span class="brand-text">
+        <strong>知识导航站</strong>
+        <em>Knowledge Hub</em>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#overview">概览 <em>Overview</em></a>
+      <a href="#writing">报告撰写 <em>Writing</em></a>
+      <a href="#compliance">法律合规 <em>Compliance</em></a>
+      <a href="#careers">招聘求职 <em>Careers</em></a>
+      <a href="#finance">金融与机构 <em>Finance</em></a>
+      <a href="#resources">资源库 <em>Resources</em></a>
+      <a href="#glossary">术语表 <em>Glossary</em></a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn" aria-label="菜单">☰</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Environmental · Social · Governance</p>
+      <h1>把 ESG 的散点，<br>整理成一张可走的地图。</h1>
+      <p class="lede">
+        这是一个个人维护的 ESG 知识中枢：从<strong>可持续报告怎么写</strong>、
+        <strong>披露新规怎么守</strong>，到<strong>这个行业怎么进人</strong>、
+        <strong>钱往哪里流</strong>。四个入口，一条主线。
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#writing">从报告撰写开始 →</a>
+        <a class="btn ghost" href="#overview">先看全局框架</a>
+      </div>
+      <dl class="hero-stats">
+        <div><dt>4</dt><dd>核心板块<br><em>Core tracks</em></dd></div>
+        <div><dt>12+</dt><dd>披露标准<br><em>Standards</em></dd></div>
+        <div><dt>30+</dt><dd>精选资源<br><em>Resources</em></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ OVERVIEW ============ -->
+  <section id="overview" class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">01 / Overview</p>
+        <h2>概览：ESG 到底在做什么</h2>
+        <p class="sec-lede">
+          ESG 不是一份报告，而是一条<strong>「监管要求 → 数据采集 → 报告披露 → 评级/投资 → 再被监管」</strong>的闭环。
+          理解闭环，才知道自己该站在哪一环。
+        </p>
+      </div>
+
+      <div class="pillar-grid">
+        <article class="pillar p-e">
+          <span class="pillar-tag">E · 环境</span>
+          <h3>Environmental</h3>
+          <ul>
+            <li>温室气体排放 Scope 1 / 2 / 3</li>
+            <li>能源结构与可再生能源占比</li>
+            <li>水资源、废弃物、循环经济</li>
+            <li>生物多样性 / 土地利用</li>
+            <li>气候物理风险与转型风险（TCFD）</li>
+          </ul>
+          <p class="pillar-note">量化程度最高，也最容易被质疑「漂绿」。</p>
+        </article>
+
+        <article class="pillar p-s">
+          <span class="pillar-tag">S · 社会</span>
+          <h3>Social</h3>
+          <ul>
+            <li>员工健康安全、培训与流失率</li>
+            <li>供应链劳工与人权尽职调查</li>
+            <li>客户隐私与数据安全</li>
+            <li>社区关系、原住民权益</li>
+            <li>产品责任与可及性</li>
+          </ul>
+          <p class="pillar-note">口径最不统一，定性叙述多于量化。</p>
+        </article>
+
+        <article class="pillar p-g">
+          <span class="pillar-tag">G · 治理</span>
+          <h3>Governance</h3>
+          <ul>
+            <li>董事会独立性、多元化、ESG 委员会</li>
+            <li>高管薪酬与可持续指标挂钩</li>
+            <li>商业道德、反腐败、举报机制</li>
+            <li>内控与风险管理架构</li>
+            <li>税务透明与股东权利</li>
+          </ul>
+          <p class="pillar-note">投资机构最先看的部分——治理差，E 和 S 都不信。</p>
+        </article>
+      </div>
+
+      <div class="loop">
+        <h3 class="loop-title">闭环流程 · The Disclosure Loop</h3>
+        <ol class="loop-steps">
+          <li><span>1</span><b>监管与标准</b><em>Regulation</em><p>CSRD、ISSB、交易所指引确定「必须说」的边界。</p></li>
+          <li><span>2</span><b>重要性评估</b><em>Materiality</em><p>双重重要性：财务重要性 + 影响重要性。</p></li>
+          <li><span>3</span><b>数据采集</b><em>Data</em><p>跨部门拉数据，建立可追溯的口径与留痕。</p></li>
+          <li><span>4</span><b>报告撰写</b><em>Writing</em><p>对标指标、叙述与数据相互印证。</p></li>
+          <li><span>5</span><b>鉴证与审计</b><em>Assurance</em><p>有限保证 → 合理保证，趋势不可逆。</p></li>
+          <li><span>6</span><b>评级与使用</b><em>Ratings</em><p>MSCI、评级机构与投资人消费这份信息。</p></li>
+        </ol>
+      </div>
+
+      <div class="callout">
+        <strong>双重重要性 Double Materiality</strong>
+        <p>同一件事要问两遍：① 它<em>对公司财务</em>影响大吗（outside-in，投资人视角）？
+        ② 公司<em>对外部世界</em>影响大吗（inside-out，利益相关方视角）？
+        欧盟 CSRD 明确要求两者都做；ISSB 目前以财务重要性为主。这是理解各套标准分歧的钥匙。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WRITING ============ -->
+  <section id="writing" class="section alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">02 / Writing</p>
+        <h2>报告撰写 · Disclosure Writing</h2>
+        <p class="sec-lede">
+          写 ESG 报告不是写作文，是<strong>「按标准填指标 + 用证据支撑叙述」</strong>。
+          先选对标框架，再做重要性评估，最后才是动笔。
+        </p>
+      </div>
+
+      <h3 class="sub">主流标准速查 · Standards at a glance</h3>
+      <div class="table-wrap">
+        <table class="dtable">
+          <thead>
+            <tr><th>标准 / 框架</th><th>适用对象</th><th>核心关注</th><th>强制性</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>GRI</b> <span class="muted">Global Reporting Initiative</span></td>
+              <td>所有组织，全球最通用</td>
+              <td>影响重要性，覆盖 E/S/G 全面议题</td>
+              <td><span class="tag soft">自愿 / 被广泛引用</span></td>
+            </tr>
+            <tr>
+              <td><b>ISSB · IFRS S1 / S2</b></td>
+              <td>上市公司、资本市场</td>
+              <td>财务重要性；S2 专攻气候披露</td>
+              <td><span class="tag mid">各国采纳中</span></td>
+            </tr>
+            <tr>
+              <td><b>TCFD</b>（已并入 ISSB）</td>
+              <td>金融机构 + 高碳行业</td>
+              <td>治理 / 战略 / 风险管理 / 指标目标 四支柱</td>
+              <td><span class="tag mid">多地强制</span></td>
+            </tr>
+            <tr>
+              <td><b>SASB</b> 行业准则</td>
+              <td>77 个细分行业</td>
+              <td>行业特定的财务重要性指标</td>
+              <td><span class="tag soft">自愿</span></td>
+            </tr>
+            <tr>
+              <td><b>CSRD / ESRS</b> <span class="muted">欧盟</span></td>
+              <td>欧盟大企业及在欧营收达标企业</td>
+              <td>双重重要性 + 强制鉴证</td>
+              <td><span class="tag hard">强制</span></td>
+            </tr>
+            <tr>
+              <td><b>交易所指引</b> <span class="muted">沪深北 / 港交所</span></td>
+              <td>A 股、港股上市公司</td>
+              <td>议题清单 + 强制/引导披露相结合</td>
+              <td><span class="tag hard">部分强制</span></td>
+            </tr>
+            <tr>
+              <td><b>CDP 问卷</b></td>
+              <td>供应链大客户要求填报</td>
+              <td>气候变化 / 水 / 森林</td>
+              <td><span class="tag mid">客户驱动</span></td>
+            </tr>
+            <tr>
+              <td><b>GHG Protocol</b></td>
+              <td>所有做碳核算的组织</td>
+              <td>Scope 1/2/3 核算方法论</td>
+              <td><span class="tag soft">方法论基础</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="sub">撰写六步法 · Six-step workflow</h3>
+      <div class="steps">
+        <div class="step">
+          <span class="sn">01</span>
+          <h4>确定对标框架</h4>
+          <p>先问「谁会读这份报告」：监管、投资人、客户、还是评级机构？据此选 GRI / ISSB / 交易所指引的组合。</p>
+        </div>
+        <div class="step">
+          <span class="sn">02</span>
+          <h4>利益相关方访谈</h4>
+          <p>投资人、员工、供应商、NGO、社区。访谈记录要留档——这是重要性矩阵的举证材料。</p>
+        </div>
+        <div class="step">
+          <span class="sn">03</span>
+          <h4>重要性议题矩阵</h4>
+          <p>横轴「对业务的影响」，纵轴「对利益相关方的重要性」，右上象限优先披露。</p>
+        </div>
+        <div class="step">
+          <span class="sn">04</span>
+          <h4>指标采集与基线</h4>
+          <p>明确口径、单位、边界（运营边界 / 合并报表范围），并与上年对齐。第一年即做基线年。</p>
+        </div>
+        <div class="step">
+          <span class="sn">05</span>
+          <h4>撰写与内部评审</h4>
+          <p>数据章节由业务口径负责人签字；叙述部分避免绝对化用语（「零排放」「完全绿色」）。</p>
+        </div>
+        <div class="step">
+          <span class="sn">06</span>
+          <h4>鉴证与发布</h4>
+          <p>优先做 Scope 1/2 的第三方鉴证；报告同步挂官网、交易所披露平台，别只发 PDF。</p>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div class="panel">
+          <h3 class="sub no-mt">高频指标清单 · Core metrics</h3>
+          <ul class="checklist">
+            <li>温室气体排放总量（tCO₂e）：Scope 1 / 2 / 3 分列</li>
+            <li>排放强度（按营收 / 产量 / 人数）</li>
+            <li>能耗总量与可再生能源占比（%）</li>
+            <li>取水量、耗水强度、废水回用率</li>
+            <li>危废产生量与合规处置率</li>
+            <li>工伤率 LTIFR、因工死亡人数、安全培训小时</li>
+            <li>员工流失率、女性管理者占比、培训人均小时</li>
+            <li>供应商 ESG 审核覆盖率、高风险供应商整改率</li>
+            <li>董事会独立性、女性董事占比、ESG 委员会设立</li>
+            <li>反腐败培训覆盖率、举报事件数与处理率</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3 class="sub no-mt">写作红线 · Writing red flags</h3>
+          <ul class="redflag">
+            <li><b>只报喜不报忧</b>：负面指标缺失比数据难看更伤评级。</li>
+            <li><b>口径漂移</b>：今年换算法却不做重述对比，等于数据造假嫌疑。</li>
+            <li><b>承诺无路径</b>：「2050 碳中和」必须配里程碑、资本开支与责任人。</li>
+            <li><b>范围 3 留白</b>：占比最大的排放最容易被投资人追问。</li>
+            <li><b>图文不一致</b>：案例故事里的数字与数据表对不上，是鉴证最先查的。</li>
+            <li><b>目标无基线</b>：没有基准年的百分比目标无法验证。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMPLIANCE ============ -->
+  <section id="compliance" class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">03 / Compliance</p>
+        <h2>法律合规 · Legal &amp; Compliance</h2>
+        <p class="sec-lede">
+          ESG 已从「提倡」变成「义务」。合规的核心风险只有一个词：<strong>漂绿（Greenwashing）</strong>——
+          说得多、做得少、证不出。
+        </p>
+      </div>
+
+      <h3 class="sub">监管时间轴 · Regulatory timeline</h3>
+      <div class="timeline">
+        <div class="tl-item">
+          <span class="tl-year">2015</span>
+          <div class="tl-body"><b>巴黎协定 · UN SDGs</b><p>全球气候与可持续发展目标框架落地，1.5℃ 目标成为基准。</p></div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year">2017</span>
+          <div class="tl-body"><b>TCFD 发布</b><p>气候相关财务信息披露工作组建议，四支柱结构成为通用语言。</p></div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year">2021</span>
+          <div class="tl-body"><b>ISSB 成立 · 中国绿债目录统一</b><p>IFRS 基金会设立国际可持续准则理事会；国内绿色债券标准与国外趋同。</p></div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year">2023</span>
+          <div class="tl-body"><b>欧盟 CSRD 生效 · IFRS S1/S2 发布</b><p>全球披露进入强制化阶段，双重重要性与气候披露成为主战场。</p></div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year">2024</span>
+          <div class="tl-body"><b>沪深北交易所《可持续发展报告指引》</b><p>A 股进入强制披露时代，部分议题设过渡期；港交所气候披露对齐 ISSB。</p></div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year">2025+</span>
+          <div class="tl-body"><b>强制鉴证与供应链尽职调查</b><p>CSDDD、欧盟碳边境调节机制 CBAM 落地，出口企业面临碳成本与合规双重压力。</p></div>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div class="panel warn">
+          <h3 class="sub no-mt">高风险雷区 · Risk hotspots</h3>
+          <ul class="risklist">
+            <li><b>漂绿宣传</b>：广告与包装使用「环保」「碳中和」但无认证依据 → 消费者诉讼与监管处罚。</li>
+            <li><b>选择性披露</b>：只披露有利指标、隐瞒重大环境处罚 → 证券虚假陈述风险。</li>
+            <li><b>供应链人权</b>：强迫劳动、矿产冲突地区采购 → 欧盟 CSDDD 与进口禁令。</li>
+            <li><b>数据造假</b>：排放数据篡改 → 触及财务造假与刑责。</li>
+            <li><b>碳关税</b>：CBAM 申报不实 → 清关受阻与补缴成本。</li>
+            <li><b>反洗钱 / 制裁</b>：绿色项目投资标的穿透核查不足。</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3 class="sub no-mt">合规自查清单 · Self-check</h3>
+          <ul class="checklist">
+            <li>是否已识别适用的强制披露清单（属地 + 上市地 + 客户要求）</li>
+            <li>重要性议题矩阵是否有访谈记录与评审签字留痕</li>
+            <li>Scope 1/2 数据是否有第三方鉴证，Scope 3 是否有测算假设文档</li>
+            <li>目标承诺是否具备基线年、路径、责任部门与预算</li>
+            <li>对外宣传用语是否经过合规与法务复核</li>
+            <li>供应商 ESG 条款是否写入采购合同、是否有审核与整改闭环</li>
+            <li>董事会是否就 ESG 报告履行审议程序（会议纪要）</li>
+            <li>历史报告数据是否可追溯、口径变更是否做重述说明</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout legal">
+        <strong>一句话原则 · The rule of thumb</strong>
+        <p>凡是写进报告或广告的每一个数字和形容词，都要能拿出「谁、在什么时候、用什么方法算出来的」。
+        拿不出，就删掉。<em>If you can't evidence it, don't claim it.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CAREERS ============ -->
+  <section id="careers" class="section alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">04 / Careers</p>
+        <h2>招聘求职 · Careers</h2>
+        <p class="sec-lede">
+          ESG 岗位大致分五类：<strong>写报告的、算碳的、查合规的、投钱的、卖方案的</strong>。
+          先定位你想进哪一环，再补对应技能栈。
+        </p>
+      </div>
+
+      <div class="role-grid">
+        <article class="role">
+          <h3>ESG 分析师 / 研究员</h3>
+          <p class="role-en">ESG Analyst · Research</p>
+          <p class="role-desc">评级机构、券商研究所、基金。读报告、打分、写评级与行业研究。</p>
+          <div class="role-meta"><span>核心技能</span>财务分析 · 数据处理 · 行业研究 · 英文文献</div>
+          <div class="role-meta"><span>门槛</span>金融/环境/理工本科以上，CFA ESG 加分</div>
+        </article>
+        <article class="role">
+          <h3>可持续报告撰写 / 披露经理</h3>
+          <p class="role-en">ESG Reporting Manager</p>
+          <p class="role-desc">上市公司或咨询机构。拉数据、对标标准、统筹跨部门并交付报告。</p>
+          <div class="role-meta"><span>核心技能</span>GRI/ISSB 标准 · 项目管理 · 跨部门协调 · 文字功底</div>
+          <div class="role-meta"><span>门槛</span>3 年以上经验，懂业务口径比会写更重要</div>
+        </article>
+        <article class="role">
+          <h3>碳管理 / 碳资产</h3>
+          <p class="role-en">Carbon Management</p>
+          <p class="role-desc">核算 Scope 1/2/3、做碳盘查、参与 CCER / 绿电绿证交易。</p>
+          <div class="role-meta"><span>核心技能</span>GHG Protocol · ISO 14064 · LCA · 碳市场机制</div>
+          <div class="role-meta"><span>门槛</span>环境/能源/化工背景，建模能力强</div>
+        </article>
+        <article class="role">
+          <h3>ESG 合规 / 可持续尽调</h3>
+          <p class="role-en">ESG Compliance &amp; Due Diligence</p>
+          <p class="role-desc">律所、企业法务、投行尽调。审阅供应链人权、漂绿风险、披露合规。</p>
+          <div class="role-meta"><span>核心技能</span>公司法/证券法 · CSDDD · 供应链尽调 · 合同审查</div>
+          <div class="role-meta"><span>门槛</span>法律背景 + ESG 标准知识，双语合同能力强</div>
+        </article>
+        <article class="role">
+          <h3>可持续金融 / 绿色投融资</h3>
+          <p class="role-en">Sustainable Finance</p>
+          <p class="role-desc">银行、基金、保险。绿色信贷、绿色债券、转型金融产品设计与风控。</p>
+          <div class="role-meta"><span>核心技能</span>信用分析 · 绿色债券原则 · 转型路径评估 · ESG 整合</div>
+          <div class="role-meta"><span>门槛</span>金融从业背景，CFA/FRM + ESG 证书组合</div>
+        </article>
+        <article class="role">
+          <h3>ESG 咨询顾问</h3>
+          <p class="role-en">ESG Consultant</p>
+          <p class="role-desc">四大、咨询公司、本土机构。做战略、做报告、做体系搭建，节奏快、成长快。</p>
+          <div class="role-meta"><span>核心技能</span>标准框架 · 客户沟通 · 方案输出 · 抗压</div>
+          <div class="role-meta"><span>门槛</span>应届可入，但项目强度高</div>
+        </article>
+      </div>
+
+      <div class="two-col">
+        <div class="panel">
+          <h3 class="sub no-mt">值得考的证书 · Certifications</h3>
+          <ul class="certlist">
+            <li><b>CFA ESG Investing</b><span>投资方向国际认可度最高，英文机考</span></li>
+            <li><b>SASB FSA</b><span>可持续会计基础，与财务结合紧</span></li>
+            <li><b>GRI 认证培训</b><span>报告撰写方向实操性强</span></li>
+            <li><b>ISO 14064 / 14067 内审员</b><span>碳核算与产品碳足迹入门</span></li>
+            <li><b>注册碳管理师 / 碳资产管理师</b><span>国内双碳方向，含金量看机构</span></li>
+            <li><b>CCEP / 合规内审类</b><span>合规与反腐败方向</span></li>
+          </ul>
+          <p class="panel-note">证书是敲门砖，不是通行证。作品（一份自己写过的报告、一个碳盘查模型）比证书更有说服力。</p>
+        </div>
+        <div class="panel">
+          <h3 class="sub no-mt">求职路径 &amp; 渠道 · Where to look</h3>
+          <ul class="pathlist">
+            <li><b>入行跳板</b>：四大可持续发展部、ESG 咨询、评级机构研究员（门槛相对友好）</li>
+            <li><b>甲方机会</b>：上市公司 ESG 部、新能源/制造业 EHS 与可持续岗、金融机构绿色金融部</li>
+            <li><b>信息源</b>：行业公众号与社群、CDP/UNGC 招聘栏、目标公司 IR 页面、LinkedIn &amp; 猎聘定向搜索</li>
+            <li><b>简历要点</b>：写清「标准 + 工具 + 成果」，例如「按 GHG Protocol 完成 12 家工厂 Scope 1/2 盘查，识别 8% 减排空间」</li>
+            <li><b>面试高频</b>：双重重要性怎么说、Scope 3 怎么算、最近一年的新规变化、你怎么看漂绿案例</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINANCE ============ -->
+  <section id="finance" class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">05 / Finance</p>
+        <h2>金融与机构 · Finance &amp; Institutions</h2>
+        <p class="sec-lede">
+          钱的流向决定了 ESG 的成色。从<strong>投资理念</strong>到<strong>金融产品</strong>再到<strong>评级机构</strong>，
+          这一层是「ESG 如何被定价」。
+        </p>
+      </div>
+
+      <h3 class="sub">投资理念光谱 · Investment approaches</h3>
+      <div class="spec-grid">
+        <div class="spec"><span class="spec-lv">1</span><b>负面筛选</b><em>Negative screening</em><p>剔除烟草、武器、煤炭等争议行业。最古老，也最易执行。</p></div>
+        <div class="spec"><span class="spec-lv">2</span><b>ESG 整合</b><em>ESG integration</em><p>把 ESG 因子系统性纳入估值与风控模型，当前主流。</p></div>
+        <div class="spec"><span class="spec-lv">3</span><b>正面筛选</b><em>Best-in-class</em><p>同行业中选 ESG 表现最优者建仓。</p></div>
+        <div class="spec"><span class="spec-lv">4</span><b>主题投资</b><em>Thematic</em><p>聚焦清洁能源、水资源、循环经济等主题。</p></div>
+        <div class="spec"><span class="spec-lv">5</span><b>影响力投资</b><em>Impact investing</em><p>追求可衡量的社会/环境成效，需做影响力测算。</p></div>
+        <div class="spec"><span class="spec-lv">6</span><b>积极股东</b><em>Stewardship</em><p>行使投票权、提交股东提案，从内部推动改变。</p></div>
+      </div>
+
+      <div class="two-col">
+        <div class="panel">
+          <h3 class="sub no-mt">金融产品图谱 · Products</h3>
+          <ul class="prodlist">
+            <li><b>绿色债券 Green Bond</b><span>募集资金专项用于绿色项目，需资金用途追踪与年度披露</span></li>
+            <li><b>转型债券 Transition Bond</b><span>支持高碳行业转型路径，争议与机遇并存</span></li>
+            <li><b>可持续挂钩贷款/债券 SLL/SLB</b><span>利率与 KPI 挂钩，达不到目标则加息或罚息</span></li>
+            <li><b>绿色信贷</b><span>银行端主力，配套环境效益测算</span></li>
+            <li><b>碳金融</b><span>碳配额质押、CCER、碳远期与碳回购</span></li>
+            <li><b>ESG 基金 / ETF</b><span>指数化产品，注意甄别「名绿实不绿」</span></li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3 class="sub no-mt">评级与机构 · Ratings &amp; bodies</h3>
+          <ul class="instlist">
+            <li><b>MSCI ESG Ratings</b><span>CCC–AAA 七档，投资人最常引用</span></li>
+            <li><b>Sustainalytics</b><span>ESG Risk Ratings，风险敞口视角</span></li>
+            <li><b>FTSE Russell</b><span>FTSE4Good 系列指数</span></li>
+            <li><b>S&amp;P Global CSA</b><span>企业可持续发展评估，DJSI 基础</span></li>
+            <li><b>商道融绿 / 中诚信绿金 / 联合赤道</b><span>本土评级与绿色认证主力</span></li>
+            <li><b>交易所与自律组织</b><span>沪深北交易所、中国上市公司协会、交易商协会</span></li>
+          </ul>
+          <p class="panel-note">注意：不同机构评级相关性并不高，同一家公司拿 A 或拿 C 都可能。评级是输入，不是结论。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESOURCES ============ -->
+  <section id="resources" class="section alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">06 / Resources</p>
+        <h2>资源库 · Resources</h2>
+        <p class="sec-lede">标准原文、数据平台与常用工具。建议按「标准 / 数据 / 机构」三类收藏。</p>
+      </div>
+
+      <div class="res-search">
+        <input type="search" id="resSearch" placeholder="搜索资源：例如 GRI、碳核算、港交所…" aria-label="搜索资源">
+        <span class="res-count" id="resCount"></span>
+      </div>
+
+      <div class="res-grid" id="resGrid">
+        <a class="res" href="https://www.globalreporting.org/" target="_blank" rel="noopener" data-cat="标准" data-k="gri 标准 报告 撰写 disclosure standards">
+          <span class="res-cat">标准</span><h4>GRI 全球报告倡议</h4><p>最通用的可持续报告标准体系</p><span class="res-url">globalreporting.org</span>
+        </a>
+        <a class="res" href="https://www.ifrs.org/groups/international-sustainability-standards-board/" target="_blank" rel="noopener" data-cat="标准" data-k="issb ifrs s1 s2 准则 披露 standards">
+          <span class="res-cat">标准</span><h4>ISSB / IFRS S1·S2</h4><p>国际可持续披露准则原文与指引</p><span class="res-url">ifrs.org</span>
+        </a>
+        <a class="res" href="https://sasb.ifrs.org/" target="_blank" rel="noopener" data-cat="标准" data-k="sasb 行业 指标 会计 standards">
+          <span class="res-cat">标准</span><h4>SASB 行业准则</h4><p>77 个行业的财务重要性指标</p><span class="res-url">sasb.ifrs.org</span>
+        </a>
+        <a class="res" href="https://www.fsb-tcfd.org/" target="_blank" rel="noopener" data-cat="标准" data-k="tcfd 气候 风险 四支柱 climate">
+          <span class="res-cat">标准</span><h4>TCFD 气候披露</h4><p>治理·战略·风险管理·指标四支柱</p><span class="res-url">fsb-tcfd.org</span>
+        </a>
+        <a class="res" href="https://ghgprotocol.org/" target="_blank" rel="noopener" data-cat="标准" data-k="ghg protocol 碳核算 scope 核算 温室气体 carbon">
+          <span class="res-cat">标准</span><h4>GHG Protocol</h4><p>Scope 1/2/3 温室气体核算方法论</p><span class="res-url">ghgprotocol.org</span>
+        </a>
+        <a class="res" href="https://sciencebasedtargets.org/" target="_blank" rel="noopener" data-cat="标准" data-k="sbti 科学碳目标 减排 目标 net zero">
+          <span class="res-cat">标准</span><h4>SBTi 科学碳目标</h4><p>企业减排目标设定与验证</p><span class="res-url">sciencebasedtargets.org</span>
+        </a>
+        <a class="res" href="https://finance.ec.europa.eu/capital-markets-union-and-financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en" target="_blank" rel="noopener" data-cat="合规" data-k="csrd esrs 欧盟 强制 双重重要性 eu">
+          <span class="res-cat">合规</span><h4>欧盟 CSRD / ESRS</h4><p>双重重要性与强制鉴证的主战场</p><span class="res-url">ec.europa.eu</span>
+        </a>
+        <a class="res" href="https://www.hkex.com.hk/Listing/Rules-and-Guidance/Environmental-Social-and-Governance?sc_lang=zh-HK" target="_blank" rel="noopener" data-cat="合规" data-k="港交所 hkex esg 指引 港股 上市">
+          <span class="res-cat">合规</span><h4>港交所 ESG 指引</h4><p>港股发行人环境社会及治理披露</p><span class="res-url">hkex.com.hk</span>
+        </a>
+        <a class="res" href="https://www.sse.com.cn/" target="_blank" rel="noopener" data-cat="合规" data-k="上交所 可持续 报告 指引 a股 上市 交易所">
+          <span class="res-cat">合规</span><h4>上海证券交易所</h4><p>可持续发展报告指引与披露通道</p><span class="res-url">sse.com.cn</span>
+        </a>
+        <a class="res" href="https://www.szse.cn/" target="_blank" rel="noopener" data-cat="合规" data-k="深交所 可持续 指引 a股 上市 交易所">
+          <span class="res-cat">合规</span><h4>深圳证券交易所</h4><p>上市公司自律监管指引与公告</p><span class="res-url">szse.cn</span>
+        </a>
+        <a class="res" href="https://unglobalcompact.org/" target="_blank" rel="noopener" data-cat="机构" data-k="ungc 联合国 全球契约 十项原则">
+          <span class="res-cat">机构</span><h4>UN Global Compact</h4><p>联合国全球契约十项原则</p><span class="res-url">unglobalcompact.org</span>
+        </a>
+        <a class="res" href="https://sdgs.un.org/" target="_blank" rel="noopener" data-cat="机构" data-k="sdg 可持续发展目标 联合国 un">
+          <span class="res-cat">机构</span><h4>UN SDGs</h4><p>17 个可持续发展目标及指标库</p><span class="res-url">sdgs.un.org</span>
+        </a>
+        <a class="res" href="https://www.cdp.net/" target="_blank" rel="noopener" data-cat="数据" data-k="cdp 问卷 气候 水 森林 披露 供应链">
+          <span class="res-cat">数据</span><h4>CDP 全球环境信息</h4><p>气候变化·水·森林问卷与评分</p><span class="res-url">cdp.net</span>
+        </a>
+        <a class="res" href="https://www.unpri.org/" target="_blank" rel="noopener" data-cat="金融" data-k="pri 责任投资 投资者 unpri 机构">
+          <span class="res-cat">金融</span><h4>UN PRI 责任投资原则</h4><p>机构投资者签署与报告框架</p><span class="res-url">unpri.org</span>
+        </a>
+        <a class="res" href="https://www.msci.com/esg-ratings" target="_blank" rel="noopener" data-cat="金融" data-k="msci 评级 esg ratings 投资 指数">
+          <span class="res-cat">金融</span><h4>MSCI ESG Ratings</h4><p>CCC–AAA 评级方法论公开说明</p><span class="res-url">msci.com</span>
+        </a>
+        <a class="res" href="https://www.sustainalytics.com/" target="_blank" rel="noopener" data-cat="金融" data-k="sustainalytics 风险 评级 esg risk">
+          <span class="res-cat">金融</span><h4>Sustainalytics</h4><p>ESG 风险评级与争议事件追踪</p><span class="res-url">sustainalytics.com</span>
+        </a>
+        <a class="res" href="https://www.icmagroup.org/sustainable-finance/the-principles-guidelines-and-handbooks/" target="_blank" rel="noopener" data-cat="金融" data-k="icma 绿色债券 原则 green bond 可持续挂钩">
+          <span class="res-cat">金融</span><h4>ICMA 绿色债券原则</h4><p>GBP / SBP / SLBP 与配套手册</p><span class="res-url">icmagroup.org</span>
+        </a>
+        <a class="res" href="https://www.cfainstitute.org/en/programs/esg-investing-certificate" target="_blank" rel="noopener" data-cat="招聘" data-k="cfa esg 证书 考试 求职 认证">
+          <span class="res-cat">招聘</span><h4>CFA ESG Investing</h4><p>投资方向认可度最高的 ESG 证书</p><span class="res-url">cfainstitute.org</span>
+        </a>
+        <a class="res" href="https://www.ipcc.ch/" target="_blank" rel="noopener" data-cat="数据" data-k="ipcc 气候 科学 报告 情景 物理风险">
+          <span class="res-cat">数据</span><h4>IPCC</h4><p>气候科学基准与情景数据来源</p><span class="res-url">ipcc.ch</span>
+        </a>
+        <a class="res" href="https://www.iso.org/standard/42546.html" target="_blank" rel="noopener" data-cat="标准" data-k="iso 26000 社会责任 标准">
+          <span class="res-cat">标准</span><h4>ISO 26000</h4><p>社会责任指南（不可认证，用于框架参考）</p><span class="res-url">iso.org</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GLOSSARY ============ -->
+  <section id="glossary" class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">07 / Glossary</p>
+        <h2>术语表 · Glossary</h2>
+        <p class="sec-lede">中文 / 英文 / 一句话解释。支持直接搜索。</p>
+      </div>
+
+      <div class="res-search">
+        <input type="search" id="glossarySearch" placeholder="搜索术语：例如 Scope 3、漂绿、双重重要性…" aria-label="搜索术语">
+        <span class="res-count" id="glossaryCount"></span>
+      </div>
+
+      <div class="gloss-grid" id="glossGrid">
+        <div class="gloss" data-k="scope 1 2 3 范围 排放 碳核算 ghg"><b>Scope 1 / 2 / 3</b><span>范围一二三排放</span><p>范围一为直接排放，范围二为外购能源间接排放，范围三为价值链其他间接排放。</p></div>
+        <div class="gloss" data-k="双重重要性 double materiality 重要性 评估"><b>Double Materiality</b><span>双重重要性</span><p>同时评估「外部议题对财务的影响」与「公司对外界的影响」。</p></div>
+        <div class="gloss" data-k="漂绿 greenwashing 合规 风险 宣传"><b>Greenwashing</b><span>漂绿</span><p>环境绩效表述夸大或无法举证，构成合规与声誉风险。</p></div>
+        <div class="gloss" data-k="csrd esrs 欧盟 强制 披露"><b>CSRD / ESRS</b><span>欧盟可持续报告指令</span><p>强制要求双重重要性披露并逐步引入第三方鉴证。</p></div>
+        <div class="gloss" data-k="issb ifrs s1 s2 准则"><b>ISSB / IFRS S1·S2</b><span>国际可持续准则理事会</span><p>面向资本市场的可持续披露准则，S2 聚焦气候。</p></div>
+        <div class="gloss" data-k="tcfd 气候 四支柱 风险 转型 物理"><b>TCFD</b><span>气候相关财务信息披露</span><p>治理、战略、风险管理、指标与目标四支柱结构。</p></div>
+        <div class="gloss" data-k="gri 标准 报告 撰写 影响"><b>GRI</b><span>全球报告倡议</span><p>以影响重要性为核心的通用可持续报告标准。</p></div>
+        <div class="gloss" data-k="assurance 鉴证 有限保证 合理保证 审计"><b>Assurance</b><span>鉴证 / 审验</span><p>第三方对 ESG 信息的保证程度，分有限保证与合理保证。</p></div>
+        <div class="gloss" data-k="碳中和 净零 net zero carbon neutral 目标"><b>Net Zero / Carbon Neutral</b><span>净零 / 碳中和</span><p>净零强调深度减排优先，碳中和可依赖抵消，二者不等价。</p></div>
+        <div class="gloss" data-k="sbti 科学碳目标 减排 路径"><b>SBTi</b><span>科学碳目标倡议</span><p>按 1.5℃ 路径验证企业减排目标的方法体系。</p></div>
+        <div class="gloss" data-k="ccer 碳配额 碳市场 交易 ets"><b>ETS / CCER</b><span>碳市场与减排量</span><p>碳排放权交易体系与国家核证自愿减排量。</p></div>
+        <div class="gloss" data-k="cbam 碳关税 边境 出口 欧盟"><b>CBAM</b><span>碳边境调节机制</span><p>欧盟对进口高碳产品征收的碳成本调节机制。</p></div>
+        <div class="gloss" data-k="csddd 尽职调查 供应链 人权 欧盟"><b>CSDDD</b><span>企业可持续尽职调查指令</span><p>要求企业识别并整改供应链人权与环境负面影响。</p></div>
+        <div class="gloss" data-k="绿色债券 green bond 转型债券 可持续挂钩 slb"><b>Green / Transition / SLB</b><span>绿债·转型债·可持续挂钩债</span><p>分别按资金用途、转型路径与 KPI 挂钩设计。</p></div>
+        <div class="gloss" data-k="esg 整合 投资 策略 负面筛选 影响力"><b>ESG Integration</b><span>ESG 整合</span><p>将 ESG 因子系统性纳入投资分析与决策流程。</p></div>
+        <div class="gloss" data-k="lca 生命周期 产品碳足迹 评估"><b>LCA</b><span>生命周期评价</span><p>从原材料到废弃全链条的环境影响量化方法。</p></div>
+        <div class="gloss" data-k="cdp 问卷 评分 供应链 披露"><b>CDP</b><span>全球环境信息平台</span><p>气候、水、森林主题问卷与 A–D 评级。</p></div>
+        <div class="gloss" data-k="sdg 可持续发展目标 联合国"><b>SDGs</b><span>可持续发展目标</span><p>联合国 17 项目标，常用于企业贡献度对标。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">08 / About</p>
+        <h2>关于本站 · About</h2>
+      </div>
+      <div class="about-grid">
+        <div class="panel">
+          <h3 class="sub no-mt">使用方式</h3>
+          <ul class="plainlist">
+            <li>按板块顺序读一遍，建立闭环认知；</li>
+            <li>写报告时直接抄「高频指标清单」与「写作红线」；</li>
+            <li>求职时对照岗位卡补技能栈，证书按需取舍；</li>
+            <li>资源库与术语表可即时搜索，作为日常速查。</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3 class="sub no-mt">免责说明</h3>
+          <p class="disclaimer">
+            本站为个人学习笔记与导航索引，<strong>不构成法律、投资或审计意见</strong>。
+            法规与标准持续更新，引用前请以监管机构与标准制定方的最新原文为准。
+            内容如有出入，欢迎自行修订后提交更新。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div>
+      <span class="brand-mark sm">ESG</span>
+      <p class="footer-t">ESG 知识导航站 · ESG Knowledge Hub</p>
+      <p class="footer-s">个人维护的可持续发展知识索引</p>
+    </div>
+    <div class="footer-links">
+      <a href="#writing">报告撰写</a>
+      <a href="#compliance">法律合规</a>
+      <a href="#careers">招聘求职</a>
+      <a href="#finance">金融与机构</a>
+      <a href="#resources">资源库</a>
+      <a href="https://github.com/ruixinji/esg-hub" target="_blank" rel="noopener">源码 GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
